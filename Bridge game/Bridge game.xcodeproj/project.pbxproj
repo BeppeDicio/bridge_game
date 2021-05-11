@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9891ACC264A793800C95366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9891ACB264A793800C95366 /* AppDelegate.swift */; };
+		D9891ACE264A793800C95366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9891ACD264A793800C95366 /* SceneDelegate.swift */; };
+		D9891AD0264A793800C95366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9891ACF264A793800C95366 /* ViewController.swift */; };
+		D9891AD3264A793800C95366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9891AD1264A793800C95366 /* Main.storyboard */; };
+		D9891AD5264A793900C95366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9891AD4264A793900C95366 /* Assets.xcassets */; };
+		D9891AD8264A793900C95366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9891AD6264A793900C95366 /* LaunchScreen.storyboard */; };
+		D9891AE3264A793900C95366 /* Bridge_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9891AE2264A793900C95366 /* Bridge_gameTests.swift */; };
+		D9891AEE264A793900C95366 /* Bridge_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9891AED264A793900C95366 /* Bridge_gameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9891ADF264A793900C95366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9891AC0264A793800C95366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9891AC7264A793800C95366;
+			remoteInfo = "Bridge game";
+		};
+		D9891AEA264A793900C95366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9891AC0264A793800C95366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9891AC7264A793800C95366;
+			remoteInfo = "Bridge game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9891AC8264A793800C95366 /* Bridge game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bridge game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9891ACB264A793800C95366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9891ACD264A793800C95366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D9891ACF264A793800C95366 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9891AD2264A793800C95366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9891AD4264A793900C95366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9891AD7264A793900C95366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9891AD9264A793900C95366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9891ADE264A793900C95366 /* Bridge gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bridge gameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9891AE2264A793900C95366 /* Bridge_gameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge_gameTests.swift; sourceTree = "<group>"; };
+		D9891AE4264A793900C95366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9891AE9264A793900C95366 /* Bridge gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bridge gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9891AED264A793900C95366 /* Bridge_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge_gameUITests.swift; sourceTree = "<group>"; };
+		D9891AEF264A793900C95366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9891AC5264A793800C95366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9891ADB264A793900C95366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9891AE6264A793900C95366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9891ABF264A793800C95366 = {
+			isa = PBXGroup;
+			children = (
+				D9891ACA264A793800C95366 /* Bridge game */,
+				D9891AE1264A793900C95366 /* Bridge gameTests */,
+				D9891AEC264A793900C95366 /* Bridge gameUITests */,
+				D9891AC9264A793800C95366 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9891AC9264A793800C95366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9891AC8264A793800C95366 /* Bridge game.app */,
+				D9891ADE264A793900C95366 /* Bridge gameTests.xctest */,
+				D9891AE9264A793900C95366 /* Bridge gameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9891ACA264A793800C95366 /* Bridge game */ = {
+			isa = PBXGroup;
+			children = (
+				D9891ACB264A793800C95366 /* AppDelegate.swift */,
+				D9891ACD264A793800C95366 /* SceneDelegate.swift */,
+				D9891ACF264A793800C95366 /* ViewController.swift */,
+				D9891AD1264A793800C95366 /* Main.storyboard */,
+				D9891AD4264A793900C95366 /* Assets.xcassets */,
+				D9891AD6264A793900C95366 /* LaunchScreen.storyboard */,
+				D9891AD9264A793900C95366 /* Info.plist */,
+			);
+			path = "Bridge game";
+			sourceTree = "<group>";
+		};
+		D9891AE1264A793900C95366 /* Bridge gameTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9891AE2264A793900C95366 /* Bridge_gameTests.swift */,
+				D9891AE4264A793900C95366 /* Info.plist */,
+			);
+			path = "Bridge gameTests";
+			sourceTree = "<group>";
+		};
+		D9891AEC264A793900C95366 /* Bridge gameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9891AED264A793900C95366 /* Bridge_gameUITests.swift */,
+				D9891AEF264A793900C95366 /* Info.plist */,
+			);
+			path = "Bridge gameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9891AC7264A793800C95366 /* Bridge game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9891AF2264A793900C95366 /* Build configuration list for PBXNativeTarget "Bridge game" */;
+			buildPhases = (
+				D9891AC4264A793800C95366 /* Sources */,
+				D9891AC5264A793800C95366 /* Frameworks */,
+				D9891AC6264A793800C95366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bridge game";
+			productName = "Bridge game";
+			productReference = D9891AC8264A793800C95366 /* Bridge game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9891ADD264A793900C95366 /* Bridge gameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9891AF5264A793900C95366 /* Build configuration list for PBXNativeTarget "Bridge gameTests" */;
+			buildPhases = (
+				D9891ADA264A793900C95366 /* Sources */,
+				D9891ADB264A793900C95366 /* Frameworks */,
+				D9891ADC264A793900C95366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9891AE0264A793900C95366 /* PBXTargetDependency */,
+			);
+			name = "Bridge gameTests";
+			productName = "Bridge gameTests";
+			productReference = D9891ADE264A793900C95366 /* Bridge gameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9891AE8264A793900C95366 /* Bridge gameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9891AF8264A793900C95366 /* Build configuration list for PBXNativeTarget "Bridge gameUITests" */;
+			buildPhases = (
+				D9891AE5264A793900C95366 /* Sources */,
+				D9891AE6264A793900C95366 /* Frameworks */,
+				D9891AE7264A793900C95366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9891AEB264A793900C95366 /* PBXTargetDependency */,
+			);
+			name = "Bridge gameUITests";
+			productName = "Bridge gameUITests";
+			productReference = D9891AE9264A793900C95366 /* Bridge gameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9891AC0264A793800C95366 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D9891AC7264A793800C95366 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					D9891ADD264A793900C95366 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = D9891AC7264A793800C95366;
+					};
+					D9891AE8264A793900C95366 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = D9891AC7264A793800C95366;
+					};
+				};
+			};
+			buildConfigurationList = D9891AC3264A793800C95366 /* Build configuration list for PBXProject "Bridge game" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9891ABF264A793800C95366;
+			productRefGroup = D9891AC9264A793800C95366 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9891AC7264A793800C95366 /* Bridge game */,
+				D9891ADD264A793900C95366 /* Bridge gameTests */,
+				D9891AE8264A793900C95366 /* Bridge gameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9891AC6264A793800C95366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9891AD8264A793900C95366 /* LaunchScreen.storyboard in Resources */,
+				D9891AD5264A793900C95366 /* Assets.xcassets in Resources */,
+				D9891AD3264A793800C95366 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9891ADC264A793900C95366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9891AE7264A793900C95366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9891AC4264A793800C95366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9891AD0264A793800C95366 /* ViewController.swift in Sources */,
+				D9891ACC264A793800C95366 /* AppDelegate.swift in Sources */,
+				D9891ACE264A793800C95366 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9891ADA264A793900C95366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9891AE3264A793900C95366 /* Bridge_gameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9891AE5264A793900C95366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9891AEE264A793900C95366 /* Bridge_gameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9891AE0264A793900C95366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9891AC7264A793800C95366 /* Bridge game */;
+			targetProxy = D9891ADF264A793900C95366 /* PBXContainerItemProxy */;
+		};
+		D9891AEB264A793900C95366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9891AC7264A793800C95366 /* Bridge game */;
+			targetProxy = D9891AEA264A793900C95366 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9891AD1264A793800C95366 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9891AD2264A793800C95366 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9891AD6264A793900C95366 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9891AD7264A793900C95366 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9891AF0264A793900C95366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9891AF1264A793900C95366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9891AF3264A793900C95366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bridge game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.diciodix.Bridge-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9891AF4264A793900C95366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bridge game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.diciodix.Bridge-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9891AF6264A793900C95366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bridge gameTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.diciodix.Bridge-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bridge game.app/Bridge game";
+			};
+			name = Debug;
+		};
+		D9891AF7264A793900C95366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bridge gameTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.diciodix.Bridge-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bridge game.app/Bridge game";
+			};
+			name = Release;
+		};
+		D9891AF9264A793900C95366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bridge gameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.diciodix.Bridge-gameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bridge game";
+			};
+			name = Debug;
+		};
+		D9891AFA264A793900C95366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bridge gameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.diciodix.Bridge-gameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bridge game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9891AC3264A793800C95366 /* Build configuration list for PBXProject "Bridge game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9891AF0264A793900C95366 /* Debug */,
+				D9891AF1264A793900C95366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9891AF2264A793900C95366 /* Build configuration list for PBXNativeTarget "Bridge game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9891AF3264A793900C95366 /* Debug */,
+				D9891AF4264A793900C95366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9891AF5264A793900C95366 /* Build configuration list for PBXNativeTarget "Bridge gameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9891AF6264A793900C95366 /* Debug */,
+				D9891AF7264A793900C95366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9891AF8264A793900C95366 /* Build configuration list for PBXNativeTarget "Bridge gameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9891AF9264A793900C95366 /* Debug */,
+				D9891AFA264A793900C95366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9891AC0264A793800C95366 /* Project object */;
+}
