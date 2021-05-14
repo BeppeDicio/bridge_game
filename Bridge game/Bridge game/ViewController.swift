@@ -9,32 +9,26 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    let cells = ["1", "2", "3", "4", "5",
-                 "6", "7", "8", "9", "10",
-                 "11", "12", "13", "14", "15",
-                 "16", "17", "18", "19", "20",
-                 "21", "22", "23", "24", "25"]
-    
-    var gridSituation = [0, 0, 0, 0, 0,
-                         0, 0, 0, 0, 0,
-                         0, 0, 0, 0, 0,
-                         0, 0, 0, 0, 0,
-                         0, 0, 0, 0, 0, ]
+    var collView: UICollectionView? = nil
+    var game = Game()
+    let numberOfSquares = 25
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        game = GameManager.resetGame()
+        
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cells.count
+        collView = collectionView
+        return numberOfSquares
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
-        cell.cellLabel.text = cells[indexPath.item]
-        if(gridSituation[indexPath.item] == 1) {
+        if(game.grid[indexPath.item] == 1) {
             cell.backV.backgroundColor = UIColor.blue
         }
         else {
@@ -46,11 +40,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        gridSituation[indexPath.item] = 1
-        collectionView.reloadData()
+        if (game.playedClicks < 10) {
+            game.playedClicks += 1
+            GameManager.cellPressed(cell: indexPath.item, collView: collectionView, game: &game)
+        }
         
         print("pressed on \(indexPath.item + 1)")
-        print(gridSituation)
+        print(game.grid)
+    }
+    
+    @IBAction func resetGame(_ sender: Any) {
+        
+        game = GameManager.resetGame()
+        
+        collView?.reloadData()
     }
 }
 

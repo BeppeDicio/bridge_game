@@ -16,6 +16,8 @@
 		D9891AE3264A793900C95366 /* Bridge_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9891AE2264A793900C95366 /* Bridge_gameTests.swift */; };
 		D9891AEE264A793900C95366 /* Bridge_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9891AED264A793900C95366 /* Bridge_gameUITests.swift */; };
 		D9891AFC264A98FE00C95366 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9891AFB264A98FE00C95366 /* CollectionViewCell.swift */; };
+		D9B15998264D78D8004ABBF6 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B15997264D78D8004ABBF6 /* GameManager.swift */; };
+		D9B1599A264D8224004ABBF6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B15999264D8224004ABBF6 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		D9891AED264A793900C95366 /* Bridge_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge_gameUITests.swift; sourceTree = "<group>"; };
 		D9891AEF264A793900C95366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9891AFB264A98FE00C95366 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D9B15997264D78D8004ABBF6 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		D9B15999264D8224004ABBF6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				D9891AD4264A793900C95366 /* Assets.xcassets */,
 				D9891AD6264A793900C95366 /* LaunchScreen.storyboard */,
 				D9891AD9264A793900C95366 /* Info.plist */,
+				D9B15997264D78D8004ABBF6 /* GameManager.swift */,
+				D9B15999264D8224004ABBF6 /* Game.swift */,
 			);
 			path = "Bridge game";
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9891AD0264A793800C95366 /* ViewController.swift in Sources */,
+				D9B1599A264D8224004ABBF6 /* Game.swift in Sources */,
 				D9891ACC264A793800C95366 /* AppDelegate.swift in Sources */,
 				D9891AFC264A98FE00C95366 /* CollectionViewCell.swift in Sources */,
 				D9891ACE264A793800C95366 /* SceneDelegate.swift in Sources */,
+				D9B15998264D78D8004ABBF6 /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
