@@ -43,7 +43,10 @@ class GameManager {
                 }
             }
         }
-
         collView.reloadData()
+    }
+    
+    static func updateClicks(game: inout Game, clickLabel: inout UILabel){
+        clickLabel.text = "\(game.totalClicks - game.playedClicks)"
     }
 }

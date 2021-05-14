@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var avariableClicksLabel: UILabel!
+    
     var collView: UICollectionView? = nil
     var game = Game()
     let numberOfSquares = 25
@@ -42,6 +44,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         if (game.playedClicks < 10) {
             game.playedClicks += 1
+            GameManager.updateClicks(game: &game, clickLabel: &avariableClicksLabel)
             GameManager.cellPressed(cell: indexPath.item, collView: collectionView, game: &game)
         }
         
@@ -52,6 +55,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBAction func resetGame(_ sender: Any) {
         
         game = GameManager.resetGame()
+        GameManager.updateClicks(game: &game, clickLabel: &avariableClicksLabel)
         
         collView?.reloadData()
     }
