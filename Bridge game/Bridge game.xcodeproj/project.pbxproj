@@ -105,16 +105,16 @@
 		D9891ACA264A793800C95366 /* Bridge game */ = {
 			isa = PBXGroup;
 			children = (
-				D9891ACB264A793800C95366 /* AppDelegate.swift */,
-				D9891ACD264A793800C95366 /* SceneDelegate.swift */,
 				D9891ACF264A793800C95366 /* ViewController.swift */,
-				D9891AD1264A793800C95366 /* Main.storyboard */,
 				D9891AFB264A98FE00C95366 /* CollectionViewCell.swift */,
-				D9891AD4264A793900C95366 /* Assets.xcassets */,
-				D9891AD6264A793900C95366 /* LaunchScreen.storyboard */,
-				D9891AD9264A793900C95366 /* Info.plist */,
 				D9B15997264D78D8004ABBF6 /* GameManager.swift */,
 				D9B15999264D8224004ABBF6 /* Game.swift */,
+				D9891AD4264A793900C95366 /* Assets.xcassets */,
+				D9891ACB264A793800C95366 /* AppDelegate.swift */,
+				D9891ACD264A793800C95366 /* SceneDelegate.swift */,
+				D9891AD9264A793900C95366 /* Info.plist */,
+				D9891AD1264A793800C95366 /* Main.storyboard */,
+				D9891AD6264A793900C95366 /* LaunchScreen.storyboard */,
 			);
 			path = "Bridge game";
 			sourceTree = "<group>";
@@ -450,6 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Bridge game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Bridge game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

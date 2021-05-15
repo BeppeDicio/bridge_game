@@ -32,17 +32,18 @@ class GameManager {
         
         var index = cell % 5
         print(index)
-        while(index < 25){
-            
+        while(index < 25 && game.grid[index] != 1){
             game.grid[index] = 1
             // if the cell under is blue stop
             if(index + 5 < 25 && game.grid[index + 5] == 1){
                 game.cellVal[index] = game.cellVal[index + 5] + 5
+                game.playedClicks += 1
                 break
             }
             
             if(index + 5 > 24){
                 game.cellVal[index] = 5
+                game.playedClicks += 1
                 break
             }
             
@@ -60,6 +61,7 @@ class GameManager {
                         }
                         ind += 5
                     }
+                    game.playedClicks += 1
                     break
                 } else {
                     game.grid[index] = 0

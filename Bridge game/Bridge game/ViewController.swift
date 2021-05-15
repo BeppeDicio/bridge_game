@@ -47,9 +47,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if (game.playedClicks < 10) {
-            game.playedClicks += 1
-            GameManager.updateClicks(game: &game, clickLabel: &avariableClicksLabel)
             GameManager.cellPressed(cell: indexPath.item, collView: collectionView, game: &game)
+            GameManager.updateClicks(game: &game, clickLabel: &avariableClicksLabel)
         }
         
         if (game.playedClicks == 10){
