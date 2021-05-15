@@ -19,8 +19,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        game = GameManager.resetGame()
-        
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -30,12 +28,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
-        cell.cellLabel.text = ("\(game.cellVal[indexPath.item])")
+        
+        if(game.playedClicks == 10){
+            cell.cellLabel.text = ("\(game.cellVal[indexPath.item])")
+        } else {
+            cell.cellLabel.text = ("")
+        }
         if(game.grid[indexPath.item] == 1) {
-            cell.backV.backgroundColor = UIColor.blue
+            cell.backV.backgroundColor = UIColor(red: 76/255, green: 86/255, blue: 105/255, alpha: 1)
         }
         else {
-            cell.backV.backgroundColor = UIColor.gray
+            cell.backV.backgroundColor = UIColor(red: 238/255, green: 238/255, blue: 238/255, alpha: 1)
         }
         
         return cell
@@ -50,8 +53,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
         
         if (game.playedClicks == 10){
-            GameManager.getGameResult(game: game, viewC: self, resetAction: UIAlertAction(title: "New Game", style: .default) { (action) in
-                self.resetGameAction()
+            GameManager.getGameResult(game: game, viewC: self, resetAction: UIAlertAction(title: "New Game", style: .default) { (action) in self.resetGameAction()
             })
         }
         
@@ -62,13 +64,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBAction func resetGame(_ sender: Any) {
         
         resetGameAction()
+        
+        print(game.grid)
+        print(game.cellVal)
     }
     
     func resetGameAction() {
-        game = GameManager.resetGame()
+        self.game = GameManager.resetGame()
         GameManager.updateClicks(game: &game, clickLabel: &avariableClicksLabel)
         
-        collView?.reloadData()
+        self.collView?.reloadData()
     }
 }
 
