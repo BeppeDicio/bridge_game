@@ -74,21 +74,31 @@ class GameManager {
         clickLabel.text = "\(game.totalClicks - game.playedClicks)"
     }
     
-    static func getGameResult(game: Game) -> Int{
+    static func getGameResult(game: Game, viewC: UIViewController, resetAction: UIAlertAction? = nil){
         
-        var i = 24
-        var grid = game.grid
-        var gamePoints = 0
+        let points = game.cellVal
+        var totalpoints = 0
         
-        while i > -1 {
-            if(GameManager.borderRight.contains(i)){
-    
-            } else if (GameManager.borderLeft.contains(i)){
-                
-            } else {
-                
-            }
+        for point in points {
+            totalpoints += point
         }
-        return 0
+        
+        // create the alert
+        let alert = UIAlertController(title: "", message: "\nDon't stop now, try to do better!", preferredStyle: .alert)
+        //alert.view.backgroundColor = UIColor.white
+        let titleAttributes = [NSAttributedString.Key.font: UIFont(name: "Marker Felt Wide", size: 29)!, NSAttributedString.Key.foregroundColor: UIColor.black]
+        let titleString = NSAttributedString(string: "Your score is: \(totalpoints)", attributes: titleAttributes)
+        alert.setValue(titleString, forKey: "attributedTitle")
+
+
+        // add the actions (buttons)
+        if (resetAction != nil){
+            alert.addAction(resetAction!)
+        }
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+        // show the alert
+        viewC.present(alert, animated: true, completion: nil)
     }
 }

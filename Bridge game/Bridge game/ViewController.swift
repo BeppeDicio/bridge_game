@@ -49,12 +49,22 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             GameManager.cellPressed(cell: indexPath.item, collView: collectionView, game: &game)
         }
         
+        if (game.playedClicks == 10){
+            GameManager.getGameResult(game: game, viewC: self, resetAction: UIAlertAction(title: "New Game", style: .default) { (action) in
+                self.resetGameAction()
+            })
+        }
+        
         print("pressed on \(indexPath.item + 1)")
         print(game.grid)
     }
     
     @IBAction func resetGame(_ sender: Any) {
         
+        resetGameAction()
+    }
+    
+    func resetGameAction() {
         game = GameManager.resetGame()
         GameManager.updateClicks(game: &game, clickLabel: &avariableClicksLabel)
         
