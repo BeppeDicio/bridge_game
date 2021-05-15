@@ -76,7 +76,7 @@ class GameManager {
         clickLabel.text = "\(game.totalClicks - game.playedClicks)"
     }
     
-    static func getGameResult(game: Game, viewC: UIViewController, resetAction: UIAlertAction? = nil){
+    static func getGameResult(game: Game, viewC: UIViewController, resetAction: UIAlertAction? = nil) -> Int{
         
         let points = game.cellVal
         var totalpoints = 0
@@ -102,5 +102,7 @@ class GameManager {
 
         // show the alert
         viewC.present(alert, animated: true, completion: nil)
+        
+        return totalpoints
     }
 }
