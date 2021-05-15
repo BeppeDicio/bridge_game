@@ -30,6 +30,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
+        cell.cellLabel.text = ("\(game.cellVal[indexPath.item])")
         if(game.grid[indexPath.item] == 1) {
             cell.backV.backgroundColor = UIColor.blue
         }
