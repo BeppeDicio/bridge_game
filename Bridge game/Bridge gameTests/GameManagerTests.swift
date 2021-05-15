@@ -265,6 +265,29 @@ class GameManagerTests: XCTestCase {
         XCTAssertEqual(result, 140)
     }
     
+    func testGetResultWith1BridgeV2(){
+        
+        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
+        
+        var game = Game()
+        
+        GameManager.cellPressed(cell: 22, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 17, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 12, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 7, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 24, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 19, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 14, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 9, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 3, collView: collectionView, game: &game)
+        GameManager.cellPressed(cell: 3, collView: collectionView, game: &game)
+        
+        let vc = UIViewController()
+        
+        let result: Int = GameManager.getGameResult(game: game, viewC: vc)
+        XCTAssertEqual(result, 145)
+    }
+    
     func testGetResultWith2Bridges(){
         
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
