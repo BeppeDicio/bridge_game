@@ -42,7 +42,6 @@ class GameManagerTests: XCTestCase {
     func testResetGame(){
         // The restGame method creates a new Game obj to init
         // the start game situation, the result is a new Game obj
-        
         let initMatrix = [0, 0, 0, 0, 0,
                           0, 0, 0, 0, 0,
                           0, 0, 0, 0, 0,
@@ -73,7 +72,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testClick6TimesOnSameColumn(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         let initMatrix = [0, 0, 0, 1, 0,
@@ -103,7 +101,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testClick6TimesOnSameRow(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         let initMatrix = [0, 0, 0, 0, 0,
@@ -118,7 +115,7 @@ class GameManagerTests: XCTestCase {
                           5, 5, 5, 5, 5]
         
         var game = Game()
-        
+
         GameManager.cellPressed(cell: 20, collView: collectionView, game: &game)
         GameManager.cellPressed(cell: 21, collView: collectionView, game: &game)
         GameManager.cellPressed(cell: 22, collView: collectionView, game: &game)
@@ -133,7 +130,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testClick10TimeCreate2Bridges(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         let initMatrix = [0, 0, 0, 0, 0,
@@ -167,7 +163,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testClickInSquareUnderTheBridge(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         let initMatrix = [0, 0, 0, 0, 0,
@@ -197,7 +192,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testGetResult2Rows(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         var game = Game()
@@ -220,7 +214,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testGetResult2Colums(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         var game = Game()
@@ -243,7 +236,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testGetResultWith1Bridge(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         var game = Game()
@@ -266,7 +258,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testGetResultWith1BridgeV2(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         var game = Game()
@@ -289,7 +280,6 @@ class GameManagerTests: XCTestCase {
     }
     
     func testGetResultWith2Bridges(){
-        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         
         var game = Game()
@@ -310,5 +300,4 @@ class GameManagerTests: XCTestCase {
         let result: Int = GameManager.getGameResult(game: game, viewC: vc)
         XCTAssertEqual(result, 115)
     }
-    
 }

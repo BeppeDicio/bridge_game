@@ -21,6 +21,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
     }
 
+    // TODO: Think about the grid component, If we want more customization and animation we can create
+    // a custom grid componet and manage all the functionalities and amimation in a better way.
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         collView = collectionView
         return numberOfSquares
